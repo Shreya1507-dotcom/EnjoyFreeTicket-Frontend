@@ -4,7 +4,7 @@ import '../assests/css/home.css';
 import Header from '../components/userHeader';
 import '../assests/css/contactUs.css';
 import '../assests/css/loginUs.css';
-const LoginUs = () => {
+const ForgotPassword = () => {
 
   return (
     <div className='loginSection'>
@@ -69,4 +69,4 @@ const LoginUs = () => {
   )
 }
 
-export default LoginUs
+export default ForgotPassword
