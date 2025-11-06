@@ -4,6 +4,7 @@ import Footer from '../components/userFooter';
 import '../assests/css/home.css';
 import '../assests/css/aboutUs.css';
 import SelectImg from '../assests/images/selectImg.png';
+import { UserDonation } from '../api';
 
 const Donation = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +14,7 @@ const Donation = () => {
     amount: '',
     panCard: '',
     movie: '',
-    suggestMovie: '',
+    suggest: '',
   });
 
   const [errors, setErrors] = useState({});
@@ -48,7 +49,7 @@ const Donation = () => {
         if (!value.trim()) error = 'Pan Card is required';
         else if (!/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/i.test(value)) error = 'Invalid Pan Card format';
         break;
-      case 'suggestMovie':
+      case 'suggest':
         if (value && !/^[A-Za-z0-9 ]{1,50}$/.test(value)) error = 'Only alphanumeric characters allowed';
         break;
       default:
@@ -71,10 +72,28 @@ const Donation = () => {
       return;
     }
 
-    console.log('Form Submitted', formData);
-    alert('Thank you for your donation!');
-    // API call here
+    SubmitDonationData();
   };
+
+  const SubmitDonationData = async () =>{
+    try{
+      const NewformData = new FormData();
+      NewformData.append('fullName', formData.fullName);
+      NewformData.append('email', formData.email);
+      NewformData.append('mobile', formData.mobile);
+      NewformData.append('amount', formData.amount);
+      NewformData.append('panCard', formData.panCard);
+      NewformData.append('suggest', formData.suggest);
+      NewformData.append('selectedMovies', formData.selectedMovies);
+
+      const donationSubmit = await UserDonation(NewformData);
+
+    }catch(err){
+      console.log("err",err)
+    }
+  }
+
+
 
   return (
     <div>
@@ -190,11 +209,11 @@ const Donation = () => {
                     className='form-control'
                     type="text"
                     placeholder='Suggest Here'
-                    name="suggestMovie"
-                    value={formData.suggestMovie}
+                    name="suggest"
+                    value={formData.suggest}
                     onChange={handleChange}
                   />
-                  {errors.suggestMovie && <small className="text-danger">{errors.suggestMovie}</small>}
+                  {errors.suggest && <small className="text-danger">{errors.suggest}</small>}
                 </div>
 
                 <input
