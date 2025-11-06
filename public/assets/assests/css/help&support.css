@@ -1,0 +1,153 @@
+.helpBanner{
+    background-image: url(../images/helpBanner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    padding: 40px 40px 70px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 40px 0px 60px;
+}
+ .helpBanner h3{
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+ }
+
+ .searchInput{
+    width: 70%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 8px 35px;
+    font-weight: 600;
+    color: #696969;
+ }
+
+ .searchHelp {
+    position: absolute;
+    top: 14px;
+    left: 16%;
+    color: #696969;
+    cursor: pointer;
+}
+
+.helpBanner p{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.contentHelpTitle{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px 0px #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.contentHelpTitle i {
+    background: #FFEAE0;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 6px;
+    color: #EF5508;
+}
+.contentHelpTitle h3 {
+    margin: 0 !important;
+    font-size: 20px !important;
+    font-weight: 700;
+    text-align: left !important;
+    color: #000 !important;
+}
+
+.contentHelpTitle p {
+    margin: 0 !important;
+    font-size: 12px !important;
+    color: #222 !important;
+    text-align: left !important;
+}
+.helpContact {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -40px;
+}
+.faqListData ul {
+    flex-direction: column;
+}
+.helpFaq {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.faqListData .nav-item{
+    margin-bottom: 5px !important;
+}
+.faqListData .nav-pills .nav-link.active , .faqListData .nav-link:hover{
+    background: #EF5508;
+    background: linear-gradient(97deg,rgba(239, 85, 8, 1) 0%, rgba(253, 217, 199, 1) 100%);
+}
+
+.faqListData .nav-link{
+    color: #001F65;
+}
+
+button.accordion-button {
+    font-size: 18px;
+    font-weight: 600;
+    background: #fff !important;
+    border: none !important;
+}
+
+button.accordion-button {
+    box-shadow: none !important;
+}
+.accordion-item {
+    border: 0px;
+}
+
+.accordion-body p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.helpWriteContent{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.helpMessage{
+    width: 33%;
+}
+
+.helpMessage h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.writeSection{
+    width: 66%;
+}
+
+.helpSubmitBtn{
+    margin-left: auto;
+    display: flex;
+    margin-top: 20px;
+    border:1px solid #EF5508;
+    background-color: #EF5508;
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 30px;
+    font-size: 14px;
+}
+
+.helpSubmitBtn:hover{
+    background: linear-gradient(97deg, rgba(239, 85, 8, 1) 0%, rgba(253, 217, 199, 1) 100%);
+}

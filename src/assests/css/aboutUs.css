@@ -1,0 +1,268 @@
+.aboutSection{
+    background-image: url('../images/aboutUsBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0px 60px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.aboutSection h3{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.aboutSection p{
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 16px;
+    width: 47%;
+    margin: auto;
+}
+
+.aboutContent{
+    background-color: #000;
+    padding: 50px 0px 80px;
+    color: #fff;
+}
+.aboutFirstContent{
+    width: 54%;
+}
+.aboutFirstContent a {
+    color: rgba(255, 255, 255, 0.62);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 24px;
+    border-radius: 32px;
+}
+
+.aboutFirstContent h3 {
+    margin: 10px 0px 20px 0;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 800;
+}
+
+.aboutFirstContent p{
+    color:rgba(255, 255, 255, 0.62);
+    font-size:18px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.aboutFirstImg{
+    height: 260px;
+}
+
+.aboutFirstImg img{
+    height: 100%;
+}
+
+.aboutFirstSec {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.aboutSecSec{
+    display: flex;
+}
+
+.aboutSubbortFirst {
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 13px;
+    height: fit-content;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.aboutSecSuport{
+    display: flex;
+    gap: 10px;
+}
+.firstAboutSecSupport{
+    background-color: rgba(0, 0, 0, .1);
+    left: -15px;
+    top: -15px;
+    position: relative;
+    z-index: 99999;
+}
+
+.thirdAboutSecSupport{
+    background-color: rgba(0, 0, 0, .1);
+    left: -18px;
+    top: -35px;
+    position: relative;
+    z-index: 99999;
+}
+.secAboutSecSupport{
+    margin-top: 25px;
+}
+
+.aboutSubbortFirst h5 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.aboutSubbortFirst p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, .62);
+}
+
+.donationDetail{
+    background-image: url('../images/donationBg.png');
+}
+
+.donationSection label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.donationSection .form-control{
+    background: rgba(255, 255, 255, .16);
+    border: 0;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.donationBg{
+    background-color: #000;
+}
+.donationSection{
+    background-color: rgba(255, 255, 255, .15);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.selectImg{
+    height: 220px !important;
+    background-color: #292929;
+}
+
+.activeSelect{
+    border: 3px solid red;
+    border-radius: 12px;
+}
+
+.selectAutoLenth{
+    overflow-x: auto;
+}
+.donateSubmitBtn{
+    background-color: #16A34A !important;
+    color: #fff;
+    padding: 8px !important;
+}
+
+.bookTicket{
+    background-image: url(../images/bookTicket.png);
+}
+
+.ticketTerms{
+    color: #fff;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.editProfile{
+   background-image: url(../images/editProfile.png); 
+   padding-top: 100px;
+}
+
+.editProfileContent{
+    color: #fff !important;
+}
+
+.editProfileList li{
+    background: rgba(255, 255, 255, .13);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.editProfileList {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
+.editProfileList li button{
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    color: rgba(255,255,255,.62);
+}
+
+.editProfileList li button.nav-link.active{
+    color: rgba(255,255,255, 1);
+    background: transparent !important;
+    font-weight: 600 !important;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.editProfileContent .form-control {
+    background: rgba(255, 255, 255, .16);
+    border: 0;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.editProfileContent h4{
+    font-weight: 600;
+}
+
+.editBack{
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.editProfileBtn{
+    background: linear-gradient(149deg, rgba(87, 3, 179, 1) 0%, rgba(120, 1, 251, 1) 100%) !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    opacity: .5 !important;
+}
+
+.editProfileBtn:hover{
+    opacity: 1 !important;
+}
+
+.leftHistory {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.leftHistory img {
+    height: 60px !important;
+}
+
+.historyContent h5, .rightHistory h5 {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.historyContent p , .rightHistory p{
+    margin: 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .62);
+}
+
+.historyDataList{
+    padding: 0;
+}
+
+.historyDataList li{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,78 @@
+.profileSection {
+    margin: 40px 0;
+}
+
+.profileContent {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: Bricolage Grotesque;
+}
+
+ul.profileList {
+    padding-left: 10px;
+}
+
+ul.profileList li {
+    padding: 10px;
+    /* background: red; */
+    margin-bottom: 20px;
+}
+
+ul.profileList li:hover {
+    background: linear-gradient(177deg, #153B92, #7593da);
+}
+
+ul.profileList li:hover a {
+    color: #fff !important;
+}
+
+ul.profileList a {
+    font-size: 18px;
+    color: rgba(34, 34, 34, 0.84);
+    font-weight: 500;
+}
+
+ul.profileList a.active {
+    font-size: 18px;
+    color: #FF5630;
+    font-weight: 600;
+}
+
+.edtProfile {
+    margin-left: auto;
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #EF5508;
+    background-color: #EF5508;
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 30px;
+    font-size: 14px;
+}
+
+.profileBtn {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222222;
+}
+
+.profileImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.profilrConfirm {
+    margin-left: auto;
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #EF5508;
+    background-color: #EF5508;
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 30px;
+    font-size: 14px;
+}

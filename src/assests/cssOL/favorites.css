@@ -1,0 +1,95 @@
+.favoritesSection {
+    margin: 40px 0;
+}
+
+.favoriteHeadding {
+    margin-bottom: 25px;
+    font-family: Bricolage Grotesque;
+    font-weight: 700;
+}
+
+.favoritesSection>ul .nav-item.show .nav-link,
+.favoritesSection>ul .nav-link.active {
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.favoritesSection>ul .nav-link.active {
+    color: #EF5508;
+    border-color: #EF5508;
+}
+
+.favoritesSection>ul .nav-link:hover {
+    isolation: none;
+    border-color: transparent;
+    color: #EF5508;
+}
+
+.favoritesSection>ul .nav-link:focus-visible {
+    box-shadow: none;
+}
+
+.favoritesSection>ul :focus-visible {
+    outline: none !important;
+}
+
+.favoritesSection>ul .nav-link {
+    color: #595959;
+}
+
+.favoritesContent {
+    display: flex;
+}
+
+.favoritesContent img {
+    width: 47%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.favoritesTitle {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 53%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.favoritesTitle h5 {
+    font-size: 18px;
+    font-family: 'Bricolage Grotesque';
+    font-weight: 700;
+}
+
+.detailFavoraties li {
+    font-size: 14px;
+    font-weight: 500;
+    color: #595959;
+    margin: 5px 0;
+}
+
+ul.detailFavoraties {
+    margin-bottom: 25px;
+}
+
+.favoritesAmount {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.favoritesAmount span {
+    color: #153B92;
+    font-size: 12px;
+}
+
+#studioFavorites,
+#photoFavorites {
+    margin: 0px !important;
+    width: 100%;
+    max-width: 100%;
+}
+
+.heartHeadding>div>p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #393939;
+}

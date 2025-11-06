@@ -1,0 +1,148 @@
+.contactName{
+    background-image: url('../images/ticketContact.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0px 60px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.reportSection{
+  background-image: url('../images/reportBg.png');
+}
+
+.contactName h3{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contactName p{
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 16px;
+    width: 47%;
+    margin: auto;
+    min-height: 96px;
+}
+
+.contactUsBtn{
+    color: rgba(255, 255, 255, 0.62);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 24px;
+    border-radius: 32px;
+}
+
+.contactForm{
+    background-color: #000;
+    padding: 50px 0px 80px;
+    color: #fff;
+}
+
+.contactForm h3{
+    margin: 10px 0px 20px 0;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 800;
+}
+
+.contactForm p{
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 18px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.formInfoSection .form-control {
+    margin-bottom: 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    color: #ccc !important;
+}
+
+
+.form-control::placeholder {
+  color: #ccc !important;   /* new color */
+  opacity: 1;    /* Firefox ke liye required hota hai */
+}
+
+/* ----------------------------ReportContent --------------------------- */
+
+.reportLeft h4 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.reportContent{
+  background-color: #000;
+}
+
+.dontedMovies {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.dontedLeft {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dontedLeft p{
+  margin: 0;
+  font-size: 12px;
+  color: rgba(255,255,255,.62);
+}
+
+.dontedLeft h5{
+  margin: 0;
+  font-size: 16px;
+  color: rgba(255,255,255,1);
+}
+
+.donterdMoview{
+  height: 60px !important;
+}
+
+.dontedMovies h6{
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.reportRight h4{
+   font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.reportRight ul li a img{
+  height: 30px;
+}
+
+.reportRight ul li a{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reportRight ul li{
+  border-bottom:1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.reportRight ul{
+  padding: 0;
+}

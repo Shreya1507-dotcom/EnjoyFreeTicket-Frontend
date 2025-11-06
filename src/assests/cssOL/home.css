@@ -1,0 +1,435 @@
+section.banner{
+    background-image: url(../images/bannerHomeBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px 120px;
+}
+
+.bannerStudioSpace{
+     background-image: url(../images/banner2.png) !important;
+     padding: 100px 0px 140px !important;
+     color: #fff !important;
+}
+
+.photoVideoBanner{
+    background-image: url(../images/banner3.png) !important;
+}
+
+.bannerContent p {
+    font-size: 24px;
+    background: linear-gradient(90deg, rgba(6, 129, 67, 1) 0%, rgba(233, 183, 59, 1) 100%);
+    font-weight: 600;
+    width: fit-content;
+    padding: 0px 30px;
+    border-radius: 30px;
+    color: #fff;
+    margin: auto;
+}
+
+.bannerContent h5{
+    font-size: 44px;
+    margin: 18px 0;
+    font-family: Bricolage Grotesque;
+    font-weight: 700;
+}
+
+.bannerCreativ{
+    color: #EF5508;
+}
+
+.bannerPerfect{
+    color: #062F8C;
+}
+
+.prodoctHeadding{
+    margin: 20px 0px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Bricolage Grotesque;
+}
+
+.prodoctHeadding span{
+    color: #062F8C;
+}
+
+.exploreImg{
+    height: 260px;
+}
+
+.exploreImgSection p {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Bricolage Grotesque';
+    position: absolute;
+    bottom: 9px;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50px, 0px);
+    color: #fff;
+}
+
+.explorePrefect {
+    padding-bottom: 20px;
+}
+
+.needPhotographTitle{
+    background-image: url(../images/photographBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    margin-bottom: 40px;
+    border-radius: 28px;
+    text-align: center;
+}
+
+.needPhotographTitle h5{
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'Bricolage Grotesque';
+}
+
+.needPhotographTitle a{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #E86D2A;
+    color: #fff;
+    text-align: center;
+    padding: 11px 70px;
+    border-radius: 14px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.signUpBg{
+    background-image: url(../images/signUpCard1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.signUpRight{
+     background-image: url(../images/signUpCard2.png);
+}
+
+.signUpBg h5{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Bricolage Grotesque';
+}
+
+.signUpBg a{
+    margin-top: 30px;
+    display: inline-block;
+    background: linear-gradient(177deg, #f36f21, #ca9066);
+    width: 80%;
+    padding: 13px;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.signUpRight a{
+    background: linear-gradient(177deg, #08308C, #608cf3) !important;
+}
+
+.signUpCard{
+    padding-bottom: 40px;
+}
+
+.testimonialHeadding{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.testimonialHeadding h5{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Bricolage Grotesque;
+    color: #1A1B1E;
+}
+
+.testimonialHeadding h5 span{
+    color: #068143;
+}
+
+.testimonialHeadding p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #242424;
+    width: 42%;
+    text-align: right;
+}
+
+.testimonialTitle{
+    font-size: 16px;
+    font-weight: 500;
+    color: #242424;
+}
+.feedbackBanner{
+    padding: 40px 0;
+}
+
+.feedBackSection{
+    padding: 30px 20px;
+    background-color: #FBFBFB;
+    border-radius: 16px;
+    height: 100%;
+}
+
+.starImg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.starImg img{
+    height: 20px;
+    width: 20px !important;
+}
+
+.feedBackSection>p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.feedBackInfo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feedBackInfo img{
+    height: 50px;
+    width: 50px !important;
+    border-radius: 50%;
+}
+
+.feedBackInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feedBackInfo img {
+    height: 50px;
+    width: 50px !important;
+    border-radius: 50%;
+}
+
+.feedBackInfo p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #101010;
+}
+img.testiBgImg {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 128px !important;
+}
+
+.feedbackBanner .owl-stage{
+    display: flex;
+}
+
+/* .feedbackBanner .owl-item.active:first-child {
+    width: 50% !important;
+} */
+.feedbackBanner .owl-item.active:first-child .feedBackSection, .feedbackBanner .owl-item.active:first-child .item{
+    height: 100%;
+}
+
+/* 
+.feedbackBanner .owl-item.active:first-child .feedBackSection{
+    background-color: #fff2f2;
+} */
+
+.feedbackBanner .owl-dots {
+    display: block !important;
+    text-align: left;
+    margin-top: 20px !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 45px;
+    height: 7px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #101010;
+    width: 70px;
+}
+
+footer{
+    background-image: url(../images/footerBg.png);
+    background-position: center;
+    padding: 40px 0 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerLogo{
+    height: 55px;
+    margin-bottom: 25px;
+}
+
+.socialIcon{
+    display: flex;
+    gap: 20px;
+}
+
+.socialIcon i{
+    background-color: rgba(238, 89, 14, 0.08);
+    color: #EF5508;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contacxtSection {
+    margin-bottom: 15px;
+}
+
+.contacxtSection h5{
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    font-family: Bricolage Grotesque;
+}
+
+.contactBor{
+    border: 1px solid red;
+    width: 30%;
+    top: -17px;
+    display: inline-block;
+    position: relative;
+}
+
+.phoneFooter{
+    border: none !important;
+}
+
+.mobBorBottom{
+    border-color: transparent !important;
+}
+
+.footerList label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+.footerList p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #222;
+}
+
+.copyRight {
+    padding: 10px 0;
+}
+
+.copyRight a, .copyRight p{
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+}
+
+.sideMenuList {
+    position: fixed;
+    right: 0px;
+    width: 380px;
+    background: antiquewhite;
+    top: 0px;
+    min-height: 100vh;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.useImg{
+    height: 23px;
+    width: 23px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.slideShow{
+    right: 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.closeSideMenu{
+    border-bottom: 2px solid #ddd;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeSideMenu i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sideMenuList ul{
+    padding: 0px 0;
+    overflow: auto;
+    max-height: 96vh;
+}
+
+.sideMenuList ul li {
+    padding: 12px 30px;
+    margin-bottom: 4px;
+}
+
+.sideMenuList ul li:hover{
+   background: linear-gradient(177deg, #f36f21, #ca9066);
+}
+
+.sideMenuList ul li:hover a{
+   color: #fff;
+}
+
+   
+
+.sideMenuList ul li a{
+    color: #001F65;
+    font-weight: 500;
+}
+
+.logOut{
+    color: #E6001F !important;
+}
+
+.sideMenuList ul li a i{
+    margin-right: 10px;
+}
+
+.bookingBtns a{
+    padding: 12px 12px;
+    text-align: center;
+    min-width: 300px;
+    color: #fff;
+    background-color: #ca9066;
+}

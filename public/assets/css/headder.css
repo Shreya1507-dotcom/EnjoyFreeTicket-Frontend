@@ -1,0 +1,109 @@
+*,body,h1,h2,h3,h4,h5,h6,p,ul{
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans';
+    box-sizing: border-box;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ✅ Remove arrows in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.row{
+    margin: 0;
+}
+.topHeadder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:991px) {
+    .container-fluid{
+        padding: 0px 70px;
+    }
+}

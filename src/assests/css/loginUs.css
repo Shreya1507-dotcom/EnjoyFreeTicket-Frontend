@@ -1,0 +1,55 @@
+.loginUs{
+    background-image: url(../images/login.png);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+.loginSection .headerMenu {
+    display: none;
+}
+.loginTitle h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.loginTitle p{
+    color:rgba(255,255,255,.62);
+}
+
+.loginInfoForm label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.loginInfoForm .form-control{
+    background: rgba(255, 255, 255, .16);
+    border: 0;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.forgotPassword{
+    text-align: right;
+    display: block;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+input.form-control.loginBtn {
+    background: linear-gradient(149deg, rgba(87, 3, 179, 1) 0%, rgba(120, 1, 251, 1) 100%);
+    color: #fff;
+    font-weight: 500;
+}
+
+.loginInfoForm p{
+    color: rgba(255,255,255,.62);
+    text-align: center;
+}
+
+.loginInfoForm p a{
+    color: rgba(255,255,255,1);
+    font-weight: 600;
+}

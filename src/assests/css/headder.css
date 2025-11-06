@@ -1,0 +1,122 @@
+*,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans';
+    box-sizing: border-box;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ✅ Remove arrows in Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.row {
+    margin: 0;
+}
+
+header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+}
+
+.logoWebHead {
+    height: 60px !important;
+}
+
+.topHeadder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.headerMenu>ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 0px;
+}
+
+.headerMenu>ul>li>a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.headerMenu>ul>li>a.active {
+    color: #E86D2A;
+}
+
+.loginMenu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginBtm {
+    background-color: rgba(34, 34, 34, 0.06);
+    color: #222;
+    border-radius: 40px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.loginBtm a {
+    color: #222222;
+    font-size: 14px;
+}
+
+.likeBtn button {
+    border: oldlace;
+    background-color: rgba(34, 34, 34, 0.06);
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
+
+.notiMenuList button {
+    border: oldlace;
+    background-color: rgba(34, 34, 34, 0.06);
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    color: #222;
+}
+
+.active button i {
+    color: #E86D2A;
+}
+
+@media (min-width:991px) {
+    .container-fluid {
+        padding: 0px 70px !important;
+    }
+}

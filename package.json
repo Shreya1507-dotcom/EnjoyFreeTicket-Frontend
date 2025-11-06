@@ -1,0 +1,73 @@
+{
+  "name": "photoapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.1",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@popperjs/core": "^2.11.8",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.8",
+    "clockpicker": "^0.0.7",
+    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.4",
+    "cra-template": "^1.2.0",
+    "datatables.net": "^2.1.8",
+    "datatables.net-dt": "^2.3.2",
+    "date-fns": "^4.1.0",
+    "jquery": "^3.7.1",
+    "jquery-clockpicker": "^0.0.8",
+    "jquery-ui-dist": "^1.13.3",
+    "pdf-lib": "^1.17.1",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.10",
+
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "^5.0.1",
+    "react-simple-captcha": "^9.3.1",
+    "react-slick": "^0.30.3",
+    "react-social-login-buttons": "^4.1.0",
+    "react-time-picker": "^8.0.2",
+    "reactjs-social-login": "^2.6.3",
+    "select2": "^4.1.0-rc.0",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.15.10",
+    "tesseract.js": "^6.0.0",
+    "toastr": "^2.1.4",
+    "web-vitals": "^4.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

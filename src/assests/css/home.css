@@ -1,0 +1,399 @@
+.banner{
+    background-image: url('../images/bannerBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px 15px;
+    position: relative;
+    width: 100%;
+}
+
+.linkBanner a{
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #0A0904;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.linkBanner h3{
+    font-size: 47px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 20px !important;
+    width: 70%;
+    margin: auto;
+}
+
+.linkBanner p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.96);
+    margin-top: 20px !important;
+    width: 55%;
+    margin: auto;
+}
+.bannerCamera {
+    position: absolute;
+    top: 0px;
+    left: 42px;
+    height: 280px !important;
+}
+
+footer{
+    background-color: #1A1A1A;
+    padding: 40px 0 0;
+}
+
+
+.footerLogo{
+    height: 30px !important;
+    margin-bottom: 25px;
+}
+
+.footerContent{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.72);
+    width: 75%;
+}
+
+.footerHeadding {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footerList {
+    padding: 0;
+}
+
+.footerList li>a{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.72);
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.contectInfo p{
+    margin-bottom: 0 !important;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+p.copyRightTitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0px !important;
+}
+
+
+.copyRightList {
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+}
+
+.copyRightList li {
+    list-style: disc;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.copyRightList li a {
+   font-size: 14px;
+    color: rgba(255, 255, 255, 0.72);
+}
+.copyRight {
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.72);
+    margin-top:20px;
+}
+
+.homeContent{
+    background-image: url('../images/home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px 50px;
+    position: relative;
+    width: 100%;
+}
+
+.countNumber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.countNumber h2 {
+    color: rgb(255,255,255,.25);
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.countNumber p {
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top: 18px;
+    left: 16px;
+}
+
+.ticketBooking{
+    margin: 40px 0px 15px;
+}
+
+.ticketTille{
+    color: #fff;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.ticketTille span{
+     color: #7801FB; 
+    background-image: linear-gradient(45deg, #7801FB , #5703B3 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    rotate: 357deg;
+    display: inline-block;
+}
+.ticketSubTile{
+    color: rgb(255 255 255 / 62%);
+    margin: 0;
+    width: 35%;
+    margin: auto;
+}
+
+.ticketBox{
+    border: 2px solid #ffffff6b;
+    padding: 25px 30px;
+    border-radius: 16px;
+}
+
+.ticketIcon{
+    width: 40px;
+    height: 40px;
+}
+
+.ticketBox h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.ticketBox p{
+    color: #E2E2E2;
+    font-size: 17px;
+}
+
+.ticketIconContent p{
+    margin-bottom: 5px;
+}
+
+.ticketPageLink a {
+    background: #16A34A;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.ticketPosition {
+    position: absolute;
+    right: -40px;
+    top: -70px;
+    width: 160px;
+}
+.ticketSection{
+    margin-top: 65px;
+}
+
+.viewReport{
+    border: 2px solid #ffffff6b;
+    padding: 25px 30px;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.viewReport .ticketBox{
+    border: 0;
+    padding: 0;
+}
+
+.chatImgHome{
+    display: block;
+    vertical-align: middle;
+    margin-left: auto;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.socialIcon{
+    display: flex;
+    gap: 20px;
+}
+
+.socialIcon i{
+    background-color: rgba(238, 89, 14, 0.08);
+    color: #EF5508;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contacxtSection {
+    margin-bottom: 15px;
+}
+
+.contacxtSection h5{
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    font-family: Bricolage Grotesque;
+    margin-bottom: 0;
+}
+
+.contactBor{
+    border: 1px solid red;
+    width: 30%;
+    top: -17px;
+    display: inline-block;
+    position: relative;
+}
+
+.phoneFooter{
+    border: none !important;
+}
+
+.mobBorBottom{
+    border-color: transparent !important;
+}
+
+.footerList label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+.footerList p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #222;
+}
+
+.copyRight {
+    padding: 10px 0;
+}
+
+.copyRight a, .copyRight p{
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+}
+
+.sideMenuList {
+    position: fixed;
+    right: 0    ;
+    width: 380px;
+    background: #fff;
+    top: 0px;
+    min-height: 100vh;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 10px 0px #727272;
+}
+
+.useImg{
+    height: 23px;
+    width: 23px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.slideShow{
+    right: 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.closeSideMenu{
+    border-bottom: 2px solid #ddd;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeSideMenu i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sideMenuList ul{
+    padding: 0px 0;
+    overflow: auto;
+    max-height: 96vh;
+}
+
+.sideMenuList ul li {
+    padding: 12px 30px;
+    margin-bottom: 4px;
+}
+
+.sideMenuList ul li:hover{
+   background: linear-gradient(177deg, #f36f21, #ca9066);
+}
+
+.sideMenuList ul li:hover a{
+   color: #fff;
+}
+
+   
+
+.sideMenuList ul li a{
+    color: #001F65;
+    font-weight: 500;
+}
+
+.logOut{
+    color: #E6001F !important;
+}
+
+.sideMenuList ul li a i{
+    margin-right: 10px;
+}
+
+.bookingBtns a{
+    padding: 12px 12px;
+    text-align: center;
+    min-width: 300px;
+    color: #fff;
+    background-color: #ca9066;
+}
