@@ -12,6 +12,8 @@ import TermsConditions from './pages/TermsConditions';
 import PrivacyPolicy from './pages/privacyPolicy';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Signup from './pages/register';
+import ForgotPassword from './pages/forgotpassword';
+
 function App() {
   return (
     <Router>
@@ -27,6 +29,8 @@ function App() {
         <Route path="editProfile" element={<EditProfileForm/>} />
         <Route path="privacy-policy" element={<PrivacyPolicy/>} />
         <Route path="terms-and-condition" element={<TermsConditions/>} />
+        <Route path="forgot-password" element={<ForgotPassword/>} />
+
 
       </Routes>
     </Router>

@@ -28,7 +28,7 @@ const LoginUs = () => {
                     <div className='form-group'>
                       <label>Password</label>
                       <input className='form-control' type='text' placeholder='Enter Password'/>
-                      <Link className='forgotPassword' to="/">Forgot Password?</Link>
+                      <Link className='forgotPassword' to="/forgot-password">Forgot Password?</Link>
                     </div>
 
                     <div className='form-group'>
@@ -36,51 +36,10 @@ const LoginUs = () => {
                     </div>
                   </form>
 
-                  <p>Don’t have an account? <Link to="/">Sign Up</Link></p>
+                  <p>Don’t have an account? <Link to="/signup">Sign Up</Link></p>
                 </div>
               </div>
 
-              <div className='signUpSection d-none'>
-                <div className='loginTitle'>
-                  <h3>Sign Up</h3>
-                  <p>Create your profile in just a few steps.</p>
-                </div>
-                <div className='loginInfoForm'>
-                  <form>
-                    <div className='form-group'>
-                      <label>Name</label>
-                      <input  className='form-control' type='text' placeholder='Enter Name'/>
-                    </div>
-
-                    <div className='form-group'>
-                      <label>Email</label>
-                      <input className='form-control' type='text' placeholder='Enter Email Address'/>
-                    </div>
-
-                    <div className='form-group'>
-                      <label>Mobile Number</label>
-                      <input className='form-control' type='text' placeholder='Enter Mobile Number'/>
-                    </div>
-
-                    <div className='form-group'>
-                      <label>Password</label>
-                      <input className='form-control' type='password' placeholder='Enter Password'/>
-                    </div>
-
-                    <div className='form-group'>
-                      <label>Confirm Password</label>
-                      <input className='form-control' type='password' placeholder='Confirm Password'/>
-                    </div>
-
-
-                    <div className='form-group mt-4'>
-                      <input className='form-control loginBtn' value="Sign Up" type="submit"/ >
-                    </div>
-                  </form>
-
-                  <p>Already have an account? <Link to="/">Log In</Link></p>
-                </div>
-              </div>
 
               <div className='forgotPasswordSection d-none'>
                 <div className='loginTitle'>
@@ -99,7 +58,7 @@ const LoginUs = () => {
                     </div>
                   </form>
 
-                  <p>Already have an account? <Link to="/">Log In</Link></p>
+                  <p>Already have an account? <Link to="/signup">Log In</Link></p>
                 </div>
               </div>
 

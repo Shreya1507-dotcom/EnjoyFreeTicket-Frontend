@@ -5,6 +5,8 @@ import Header from '../components/userHeader';
 import '../assests/css/contactUs.css';
 import '../assests/css/loginUs.css';
 import { UserRegister } from '../api';
+import OtpInput from "react-otp-input";
+
 import toastr from 'toastr';
 
 const Register = () => {
@@ -18,6 +20,14 @@ const Register = () => {
   console.log("formData",formData)
 
   const [errors, setErrors] = useState({});
+  const [otpScreen , setOtpScreen] =useState(false);
+  const [otp , setOtp] =useState('');
+
+
+  const handleOtpChange = (e) =>{
+    e.preventDefault();
+    alert('e',e)
+  }
 
   // ✅ Handle input changes and validate in real-time
   const handleChange = (e) => {
@@ -143,7 +153,8 @@ const Register = () => {
       const response = await UserRegister(NewformData);
        if (response?.data?.status) {
         toastr.success(response?.data?.message);
-    }
+        setOtpScreen(true)
+       }
     } catch (error) {
       console.error('Error :', error);
       toastr.error('Something went wrong. Please try again.');
@@ -244,11 +255,34 @@ const Register = () => {
                   </form>
 
                   <p>
-                    Already have an account? <Link to='/'>Log In</Link>
+                    Already have an account? <Link to='/login'>Log In</Link>
                   </p>
                 </div>
               </div>
             </div>
+
+            {otpScreen && (
+              <div className='otpdiv'>
+                <OtpInput
+                    value={otp}
+                    onChange={handleOtpChange}
+                    numInputs={6}
+                    renderInput={(props, index) => (
+                      <input
+                        {...props}
+                        key={index}
+                        className="form-control mx-1"
+                        style={{
+                          width: "50px",
+                          height: "50px",
+                          fontSize: "20px",
+                          textAlign: "center",
+                        }}
+                      />
+                    )}
+                  />
+              </div>
+            )}
 
             <div className='col-md-6'>{/* right side image / illustration */}</div>
           </div>

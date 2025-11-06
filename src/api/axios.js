@@ -8,7 +8,7 @@ const axiosClient = axios.create({
  
 // Axios request interceptor to add dynamic headers
 axiosClient.interceptors.request.use(async (req) => {
-    const jwt = typeof window !== "undefined" ? localStorage.getItem('jwt') : "";
+    // const jwt = typeof window !== "undefined" ? localStorage.getItem('jwt') : "";
     // console.log(jwt)
     // const studioId = typeof window !== "undefined" ? localStorage.getItem('studioId') : "";
  
