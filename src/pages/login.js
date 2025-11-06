@@ -61,6 +61,7 @@ const LoginUs = () => {
 
       if (response?.data?.status) {
         toastr.success(response?.data?.message);
+        localStorage.setItem('user_id',response?.data?.message?.token);
         navigate('/')  
       }
     } catch (error) {
