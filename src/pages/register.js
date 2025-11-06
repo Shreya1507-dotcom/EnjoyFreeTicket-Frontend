@@ -67,23 +67,30 @@ const Register = () => {
     if (name === 'name') {
       if (!value.trim()) error = 'Name is required';
       else if (value.length > 50) error = 'Name cannot exceed 50 characters';
-    } else if (name === 'email') {
+    } 
+    else if (name === 'email') {
       if (!value.trim()) error = 'Email is required';
       else if (!/^\S+@\S+\.\S+$/.test(value)) error = 'Invalid email format';
-    } else if (name === 'mobile') {
+    } 
+    else if (name === 'mobile') {
       if (!value.trim()) error = 'Mobile number is required';
       else if (!/^\d{10}$/.test(value)) error = 'Mobile must be exactly 10 digits';
-    } else if (name === 'password') {
+    } 
+    else if (name === 'password') {
       if (!value.trim()) error = 'Password is required';
-      else if (value.length < 6) error = 'Password must be at least 6 characters';
+      else if (value.length < 8) error = 'Password must be at least 8 characters';
       else if (value.length > 20) error = 'Password cannot exceed 20 characters';
-    } else if (name === 'confirmPassword') {
+      else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/.test(value)) 
+        error = 'Password must contain at least one letter and one number';
+    } 
+    else if (name === 'confirmPassword') {
       if (!value.trim()) error = 'Confirm Password is required';
       else if (value !== formData.password) error = 'Passwords do not match';
     }
 
     setErrors((prev) => ({ ...prev, [name]: error }));
   };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
