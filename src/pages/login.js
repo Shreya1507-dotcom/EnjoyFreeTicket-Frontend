@@ -27,7 +27,7 @@ const LoginUs = () => {
         msg = "Password is required";
       } else if (value.length < 8) {
         msg = "Password must be at least 8 characters";
-      } else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/.test(value)) {
+      } else if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/.test(value)) {
         msg = "Password must contain letters and numbers";
       }
     }

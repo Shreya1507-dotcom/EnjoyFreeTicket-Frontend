@@ -79,8 +79,7 @@ const Register = () => {
     else if (name === 'password') {
       if (!value.trim()) error = 'Password is required';
       else if (value.length < 8) error = 'Password must be at least 8 characters';
-      else if (value.length > 20) error = 'Password cannot exceed 20 characters';
-      else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/.test(value)) 
+      else if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/.test(value)) 
         error = 'Password must contain at least one letter and one number';
     } 
     else if (name === 'confirmPassword') {
