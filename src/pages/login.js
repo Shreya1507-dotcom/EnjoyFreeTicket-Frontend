@@ -82,7 +82,7 @@ const LoginUs = () => {
       <div className='loginUs'>
         <div className='container-fluid'>
           <div className='row'>
-            <div className='col-md-6'>
+            <div className='col-lg-6'>
               <div className='loginSection'>
                 <div className='loginTitle'>
                   <h3>Log In</h3>

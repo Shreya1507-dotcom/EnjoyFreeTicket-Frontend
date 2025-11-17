@@ -3,6 +3,9 @@
     min-height: 100vh;
     padding-top: 80px;
 }
+.signUpForm{
+    padding-top: 80px 0px 15px !important;
+}
 .loginSection .headerMenu {
     display: none;
 }
@@ -52,4 +55,17 @@ input.form-control.loginBtn {
 .loginInfoForm p a{
     color: rgba(255,255,255,1);
     font-weight: 600;
+}
+
+.loginInfoForm .form-group, .donationSection .form-group {
+    position: relative;
+}
+
+.loginInfoForm .form-group small, .donationSection .form-group small{
+    position: absolute;
+    bottom: -19px;
+}
+
+.agreeError{
+    bottom: 3px !important;
 }

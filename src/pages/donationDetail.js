@@ -5,6 +5,8 @@ import '../assests/css/home.css';
 import '../assests/css/aboutUs.css';
 import SelectImg from '../assests/images/selectImg.png';
 import { UserDonation } from '../api';
+import toastr from 'toastr';
+import axios from 'axios';
 
 const Donation = () => {
   const [formData, setFormData] = useState({
@@ -13,9 +15,19 @@ const Donation = () => {
     mobile: '',
     amount: '',
     panCard: '',
-    movie: '',
+    movie: [],
     suggest: '',
   });
+  console.log(formData)
+
+  const movies = [
+    "6732d1aa98cb70b0c9b1a123",
+    "6732d1aa98cb70b0c9b1a456",
+    "6732d1aa98cb70b0c9b1a789",
+    "6732d1aa98cb70b0c9b1a321",
+    "6732d1aa98cb70b0c9b1a654",
+    "6732d1aa98cb70b0c9b1a987"
+  ];
 
   const [errors, setErrors] = useState({});
 
@@ -84,14 +96,59 @@ const Donation = () => {
       NewformData.append('amount', formData.amount);
       NewformData.append('panCard', formData.panCard);
       NewformData.append('suggest', formData.suggest);
-      NewformData.append('selectedMovies', formData.selectedMovies);
+      NewformData.append('selectedMovies', formData.movie);
 
-      const donationSubmit = await UserDonation(NewformData);
+      displayRazorpay();
+      
+      // const donationSubmit = await UserDonation(NewformData);
 
     }catch(err){
-      console.log("err",err)
+      // console.log("err",err)
+      toastr.error(err?.response?.data?.message)
     }
   }
+
+  const loadScript = (src) => {
+    return new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.onload = () => resolve(true);
+      script.onerror = () => resolve(false);
+      document.body.appendChild(script);
+    });
+  };
+
+  const displayRazorpay = async () => {
+    const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js");
+
+    if (!res) {
+      alert("Razorpay SDK failed to load. Are you online?");
+      return;
+    }
+
+    // const { amount, id: order_id, currency } = result.data;
+    const amount= 500;
+    const currency= 'INR';
+    const order_id = 187845;
+
+    const options = {
+      key: "rzp_test_9PA57vtd6jm7LD",
+      amount: amount.toString(),
+      currency: currency,
+      name: "Your Company Name",
+      order_id: order_id,
+      // handler: async function (response) {
+      //   alert(`Payment Successful! 
+      //     Payment ID: ${response.razorpay_payment_id}
+      //     Order ID: ${response.razorpay_order_id}`);
+      //   // ✅ You can now call backend to verify payment signature
+      // },
+    };
+
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  };
+
 
 
 
@@ -190,16 +247,23 @@ const Donation = () => {
                 <div className='form-group'>
                   <label>Select Movie</label>
                   <div className='d-flex gap-2 selectAutoLenth'>
-                    {[...Array(6)].map((_, idx) => (
-                      <img
-                        key={idx}
-                        src={SelectImg}
-                        className={`img-fluid selectImg ${formData.movie === idx ? 'activeSelect' : ''}`}
-                        alt="SelectImg"
-                        onClick={() => setFormData({...formData, movie: idx})}
-                        style={{cursor: 'pointer'}}
-                      />
-                    ))}
+                 {movies.map((id, idx) => (
+                    <img
+                      key={id}
+                      src={SelectImg}
+                      className={`img-fluid selectImg ${formData.movie.includes(id) ? 'activeSelect' : ''}`}
+                      alt="SelectImg"
+                      onClick={() => {
+                        const selectedMovies = formData.movie.includes(id)
+                          ? formData.movie.filter(item => item !== id) // remove if exists
+                          : [...formData.movie, id]; // add if not exists
+                        
+                        setFormData({...formData, movie: selectedMovies});
+                      }}
+                      style={{cursor: 'pointer'}}
+                    />
+                  ))}
+
                   </div>
                 </div>
 

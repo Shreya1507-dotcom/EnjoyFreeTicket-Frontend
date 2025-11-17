@@ -91,26 +91,52 @@ const Register = () => {
   };
 
 
-  const handleSubmit = (e) => {
+ const handleSubmit = (e) => {
     e.preventDefault();
 
     const newErrors = {};
     let hasError = false;
 
+    // Validate all fields before submit
     Object.keys(formData).forEach((field) => {
-      validateField(field, formData[field]);
-      if (errors[field]) hasError = true;
+      let error = '';
+
+      if (!formData[field].trim()) {
+        error = `${field.replace(/([A-Z])/g, ' $1')} is required`;
+      } else {
+        // Apply same rules as validateField()
+        if (field === 'email' && !/^\S+@\S+\.\S+$/.test(formData.email)) {
+          error = 'Invalid email format';
+        } else if (field === 'mobile' && !/^\d{10}$/.test(formData.mobile)) {
+          error = 'Mobile must be exactly 10 digits';
+        } else if (field === 'password') {
+          if (formData.password.length < 8)
+            error = 'Password must be at least 8 characters';
+          else if (
+            !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/.test(formData.password)
+          )
+            error = 'Password must contain at least one letter, number, and special character';
+        } else if (field === 'confirmPassword' && formData.confirmPassword !== formData.password) {
+          error = 'Passwords do not match';
+        }
+      }
+
+      if (error) {
+        newErrors[field] = error;
+        hasError = true;
+      }
     });
 
     setErrors(newErrors);
 
     if (hasError) {
-      toastr.error('Please fix the errors before submitting.');
-      return;
+      toastr.error('Please fill all required fields correctly before submitting.');
+      return; // 🚫 Stop API call
     }
 
     handleSubmittedData();
   };
+
 
   const handleSubmittedData = async () => {
     try {
@@ -130,17 +156,19 @@ const Register = () => {
       }
     } catch (error) {
       console.error('Error :', error);
-      toastr.error('Something went wrong. Please try again.');
+      toastr.error(error?.response?.data?.message);
     }
   };
 
   return (
     <div className="loginSection">
-      <Header />
-      <div className="loginUs">
+     <div className=''>
+       <Header  />
+     </div>
+      <div className="loginUs signUpForm">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div className="signUpSectio">
                 <div className="loginTitle">
 
